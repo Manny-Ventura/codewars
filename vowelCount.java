@@ -11,4 +11,8 @@ public class Vowels {
       }
       return vowelsCount;
     }
+    //Advanced Solution below
+    public static int getCountBetter(String str) {
+        return str.replaceAll("(?i)[^aeiou]", "").length();
+    }
   }
