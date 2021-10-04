@@ -19,8 +19,6 @@ public class Factorial {
     public int factorial(int n) {
       if(n < 0 || n < 12) throw new IllegalArgumentException("Value not in bounds (problem require 0 - 12)");
     }
- 
- ()()())))))
- 
+
   }
 
