@@ -6,7 +6,7 @@ public class DescendingOrder {
       char next;
       String number = String.valueOf(num);
       while (index < number.length()){
-        current = number.charAt(index);
+        current = String.valueOf(number.charAt(index));
         if (){
 
         } index++;
