@@ -42,16 +42,4 @@ public class Solution{
         return nums[nums.length-1]+nums[nums.length-2];
     }
 }
-or 
-public class Solution {
-  
-  public static int largestPairSum(int[] arr) {
-    int a = Math.min(arr[0], arr[1]), b = Math.max(arr[0], arr[1]);
-    for (int i = 2, x; i < arr.length; i++) 
-      if ((x = arr[i]) >= b) { a = b; b = x; }
-      else if (x > a) a = x;
-    return a + b;
-  }
-  
-}
-
+or
