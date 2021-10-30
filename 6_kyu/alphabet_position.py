@@ -19,3 +19,7 @@ def alphabet_position(text):
             else:
                 final == ' ' + b
     return final
+
+#Best Practice
+def alphabet_position2(text):
+    return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha())
