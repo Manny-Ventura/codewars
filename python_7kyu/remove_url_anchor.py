@@ -12,3 +12,7 @@ def remove_url_anchor(url):
         return url
     else:
         return final
+
+#BEST PRACTICE
+def remove_url_anchor1(url):
+    return url.split('#')[0]
