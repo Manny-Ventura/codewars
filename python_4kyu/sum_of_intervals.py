@@ -9,10 +9,13 @@
 #   [11, 15]
 #]; // => 9
 
-def sum_of_intervals(intervals):
+def sum_of_intervals(intervals): 
     #Check if any subtracting number is less than or equal to initial value of an interval
     interval_index = 0
+    mins = []
+    maxes = []
     bank = []
+    touching_interval_count = 0
     for interval in intervals:
         min_value = interval[0]
         max_value = interval[-1]
@@ -20,8 +23,7 @@ def sum_of_intervals(intervals):
             if min_value not in bank:
                 bank.append(min_value)
             min_value += 1
-    print(bank)
-    bank.sort()
+    bank.pop()
     print(bank)
     count = 0
     value = bank[0]
@@ -34,9 +36,9 @@ def sum_of_intervals(intervals):
         else:
             value = current
         index += 1
+    return 
 
-
-    return count
-
-        
-print(sum_of_intervals([(1, 5), (6, 10)]))
+test1 = [(1, 4), (7, 10), (3, 5)] # = 7
+test2 = [(1, 5), (6, 10)] # = 8
+sum_of_intervals(test1)
+sum_of_intervals(test2)
