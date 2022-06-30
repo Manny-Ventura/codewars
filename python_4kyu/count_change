@@ -1,0 +1,18 @@
+def count_change(money, coins):
+    current_value = 0
+    coin_index = 0
+    allowed_values = []
+    coin_bank = []
+    for coin in coins:
+        current_value += coin
+        c
+        while current_value < money:
+            count_change(money, coins)
+
+
+
+def count_change2(money, coins, current_value, coin_bank):
+    while current_value < money:
+        for coin in coins:
+            if current_value + coin <
+    pass
