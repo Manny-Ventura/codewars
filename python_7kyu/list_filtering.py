@@ -7,4 +7,3 @@ def filter_list(l):
         if type(i) != str:
             new_list.append(i)
     return new_list
-filter_list(test)
